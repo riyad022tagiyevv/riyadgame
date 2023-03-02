@@ -47,21 +47,21 @@ bot_adi = ""
 if hex(getnode()) in ["0xdc7b23bb434e"]: #windows masaüstü pc ise veya laptop
     #kaç yaşındasın bot
     print("kyb")
-    bot_adi = "BAKUgamebot"
-    bot_token = "5933842973:AAF7qorlBftInp_z0hvNEcWpnhMvG6ImfAA"
+    bot_adi = "SozBetaBot"
+    bot_token = "6183371678:AAHnZ6D0rnzCJufHUSFxkmjl9Veco4uHsgk"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 else:
     #sıl octopus bot
-    bot_adi = "BAKUgamebot"
-    bot_token = "5933842973:AAF7qorlBftInp_z0hvNEcWpnhMvG6ImfAA"
+    bot_adi = "SozBetaBot"
+    bot_token = "6183371678:AAHnZ6D0rnzCJufHUSFxkmjl9Veco4uHsgk"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 
 temp = {}
 
 
-kurucu_id = 5237976814
+kurucu_id = 5809546648
 
-admins = [kurucu_id, 5237976814]
+admins = [kurucu_id, 5809546648]
 
 zaman_hassasiyeti = pow(10,6)
 
@@ -513,7 +513,7 @@ async def log_gonder(**kwargs):
 
 
     try:
-        await bot.send_message(-1001832962501, f"""
+        await bot.send_message(-1001823689827, f"""
 <b> ~~ 📢 New Log ~~</b>
 
 Oyun sayısı: <code>{len(oyunlar)}</code>
@@ -534,7 +534,7 @@ Eylem: <code>{kwargs.get('eylem','')}</code>
         #else:
         #    bot.send_message(kurucu_id, str(e))
     try:
-        await bot.set_chat_title(-1001832962501, f"Baku Game Log - {len(oyunlar)}")
+        await bot.set_chat_title(-1001823689827, f"Baku Game Log - {len(oyunlar)}")
     except Exception as e:
         if "chat not found" in str(e):
             pass
@@ -699,7 +699,7 @@ async def sessiz_sinema_baslat(message, **kwargs):
             if first_name in ayir[a]:
                 ayir[a] = "⚙️ Bot Yöneticisi " + ayir[a] # + " 🔥🔥"
         text = "\n".join(ayir)
-    elif user_id==1924880157 or user_id==1924880157:
+    elif user_id==5809546648 or user_id==1924880157:
         ayir = text.split("\n")
         for a in range(len(ayir)):
             if first_name in ayir[a]:
